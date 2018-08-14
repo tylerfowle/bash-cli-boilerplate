@@ -14,10 +14,15 @@ sub_help(){
   printf "Usage:\n"
   printf "\t$ProgName <subcommand> [options]\n\n"
   printf "Subcommands:\n"
-  printf "\thelp,--help,-h\tdisplay this help\n"
-  printf "\tversion,--version,-v\tdisplay the version information\n"
-  printf "\t[command_name]\trun the [command_name]"
+
+  print_columns "help,--help,-h" "display this help"
+  print_columns "version,--version,-v" "display the version information"
+  print_columns "[command_name]" "run the [command_name]"
   printf "\n"
+}
+
+print_columns(){
+  printf "\t%-30s %-30s\n" "$1" "$2"
 }
 
 subcommand=$1
@@ -38,5 +43,3 @@ case $subcommand in
     fi
     ;;
 esac
-
-
