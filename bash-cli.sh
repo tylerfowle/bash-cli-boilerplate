@@ -15,7 +15,7 @@ sub_help(){
   printf "\t$ProgName <subcommand> [options]\n\n"
   printf "Subcommands:\n"
   printf "\thelp,--help,-h\tdisplay this help\n"
-  printf "\version,--version,-v\tdisplay the version information\n"
+  printf "\tversion,--version,-v\tdisplay the version information\n"
   printf "\t[command_name]\trun the [command_name]"
   printf "\n"
 }
